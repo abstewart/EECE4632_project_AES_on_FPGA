@@ -42,7 +42,7 @@ class aes_algo(object):
 
     def decrypt_bin(self, binary):
         cipher = AES.new(self.key, AES.MODE_ECB)
-        return cipher.decrypt(binary)
+        return cipher.decrypt(binary).decode("latin_1")
     
         
 #end of class
